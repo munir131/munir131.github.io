@@ -1,0 +1,5 @@
+<span id="a">munir@zsh</span>:<span id="b">~</span><span id="c">$</span> cd Munir/About me
+<span id="a">munir@zsh</span>:<span id="b">~</span><span id="c">$</span> cat me.bio<br/><br/>
+"<span id="k">Lifelong learner, Early adopter, Software Programmer cum Debugger".
+
+<p>Loading...</p>
