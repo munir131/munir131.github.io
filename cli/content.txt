@@ -1,0 +1,71 @@
+<span id="a">munir@zsh</span>:<span id="b">~</span><span id="c">$</span> cat me.md<br/><br/>
+<span id="a"># Munir Khakhi</span>
+
+<span id="c">Head of Engineering at Improwised Technologies</span>
+
+Munir Khakhi is a seasoned engineering leader with over a decade of experience in building scalable, resilient, and efficient software systems. As the Head of Engineering at Improwised Technologies, he guides teams in adopting modern software development practices, with a strong focus on cloud-native architecture, DevOps, and platform engineering.
+
+He is a passionate advocate for open-source technology and an active member of the tech community, frequently sharing his knowledge on topics like event-driven architecture, containerization, and cloud infrastructure at workshops and meetups.
+
+<span id="a">### Professional Profiles</span>
+- <span id="c">LinkedIn</span>: <a href="https://www.linkedin.com/in/munir-khakhi/" target="_blank">linkedin.com/in/munir-khakhi</a>
+- <span id="c">GitHub</span>: <a href="https://github.com/munir131" target="_blank">github.com/munir131</a>
+- <span id="c">X (Twitter)</span>: <a href="https://x.com/MunirKhakhi" target="_blank">x.com/MunirKhakhi</a>
+
+------------------------------------------------------------------
+
+<span id="a">### Key Skills</span>
+- <span id="c">Cloud & DevOps</span>: Platform Engineering, AWS, GCP, Google Kubernetes Engine (GKE), Amazon EKS, Docker, Kubernetes, CI/CD, Azure DevOps, Serverless, Infrastructure as Code (IaC).
+- <span id="c">Backend & Architecture</span>: Go (Golang), PHP, Node.js, JavaScript, Microservices, Event-Driven Architecture (EDA), System Design.
+- <span id="c">Databases & Caching</span>: Redis, PostgreSQL, MongoDB, MySQL, Trino.
+- <span id="c">Languages</span>: Go, PHP, JavaScript/Node.js, Shell, Python.
+- <span id="c">Leadership</span>: Team Leadership, Technical Mentorship, Strategic Planning.
+
+------------------------------------------------------------------
+
+<span id="a">### Professional Experience</span>
+
+<span id="c">Improwised Technologies Pvt. Ltd.</span> (Total: 10+ years)
+
+- <span id="c">Head of Engineering</span> (July 2023 - Present)
+  - Leading platform engineering initiatives and driving technical strategy.
+  - <span id="op">Key Skills: Google Kubernetes Engine (GKE), Platform engineering.</span>
+
+- <span id="c">Technical Team Lead</span> (September 2018 - August 2023)
+  - Led development teams in delivering complex projects.
+  - <span id="op">Key Skills: Docker, Continuous Integration and Continuous Delivery (CI/CD), Go (Programming Language).</span>
+
+- <span id="c">Software Engineer</span> (August 2014 - April 2017)
+  - Developed and maintained web applications.
+  - <span id="op">Key Skills: Bitbucket, Docker, PHP, Node.js.</span>
+
+<span id="c">Argusoft</span> (Total: 1 year 4 months)
+
+- <span id="c">Group Lead - Tech</span> (May 2018 - August 2018)
+  - Managed a team of developers and oversaw project delivery.
+  - <span id="op">Key Skills: Docker, Azure DevOps.</span>
+
+- <span id="c">Sr. Programmer Analyst</span> (May 2017 - April 2018)
+  - Contributed to the development and architecture of software solutions.
+  - <span id="op">Key Skills: Docker, Azure DevOps.</span>
+
+------------------------------------------------------------------
+
+<span id="a">### Public Speaking & Community Contributions</span>
+
+Munir is a regular speaker who enjoys breaking down complex technical concepts for developers. His sessions focus on practical application and architectural thinking.
+
+<span id="c">Recent Talk Topics:</span>
+- Event-Driven Architecture with Google Pub/Sub: Explored the benefits of EDA, message delivery semantics, and practical implementation patterns.
+- Designing for the Cloud: A deep dive into the Twelve-Factor App, infrastructure as code, and building resilient, observable systems on AWS.
+- Podman: Exploring Daemonless Containers: Contrasted Podman with Docker, focusing on rootless security and its impact on modern development workflows.
+- Modern Software Development: Covered a wide range of topics including CI/CD, open-source tools, and industry best practices.
+- Laravel and its Ecosystem: Shared expertise on building end-to-end applications with Laravel, including tools like Laravel Sail.
+
+------------------------------------------------------------------
+
+<span id="a">### Notable Open Source Projects</span>
+- <a href="https://github.com/munir131/attachment-downloader" target="_blank">attachment-downloader</a>: A popular CLI tool to download Gmail attachments based on labels.
+- <a href="https://github.com/munir131/HTTPGraviton" target="_blank">HTTPGraviton</a>: A blackhole for HTTP requests, written in Go.
+- <a href="https://github.com/munir131/scripts" target="_blank">scripts</a>: A personal collection of useful shell scripts for developers.
+
