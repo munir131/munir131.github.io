@@ -18,18 +18,51 @@ I’m an experienced engineering leader with over 12 years of expertise in desig
 - <span id="c">Security</span>              : Zero Trust, IAM, Cloud-Native Security
 - <span id="c">Leadership</span>            : Team Building, Strategic Roadmapping, Mentorship
 
+<span id="a">### My Philosophy</span>
+I believe in <b>continuous learning</b> and <b>sharing knowledge</b>. I’m passionate about fostering a culture of mentorship within teams, helping others to grow their skills and build a collaborative engineering environment. My approach is rooted in a belief that technology should be both <b>scalable</b> and <b>secure</b> by design.
+
+<span id="a">### Leadership</span>
+- <span id="c">Mentorship</span>: Actively mentored a team of 15+ engineers, leading workshops on cloud-native architectures, containerization, and DevOps best practices.
+- <span id="c">Strategic Roadmapping</span>: Led a cloud-native transformation project at Improwised Technologies, transitioning from legacy systems to a scalable microservices architecture.
+
 <span id="a">### Professional Experience</span>
 
 <span id="c">Head of Engineering | Improwised Technologies Pvt. Ltd.</span>
 Jul 2023 - Present
-- Directing engineering strategies for cloud infrastructure, DevOps, and platform engineering.
-- Spearheaded the transition to a cloud-native architecture using Kubernetes (GKE) and AWS EKS.
-- Implemented zero-trust security models and advanced cloud-native security protocols.
+- Leading engineering initiatives for cloud infrastructure, DevOps, and platform engineering.
+- Architected and implemented cloud-native solutions on Kubernetes (GKE) and AWS EKS, ensuring scalability and security.
+- Pioneered a zero-trust security model for applications deployed on public cloud environments.
 
 <span id="c">Technical Team Lead | Improwised Technologies Pvt. Ltd.</span>
 Sep 2018 - Aug 2023
-- Led architecture of microservices and event-driven systems using Google Pub/Sub and AWS SNS/SQS.
-- Orchestrated end-to-end CI/CD pipelines with Terraform, Docker, and Kubernetes.
+- Led a team in building Data Stream as a Service in a cloud-native environment capable of handling high traffic.
+- Leveraged Go, Kubernetes, and Pulsar for high availability and scalability.
+- Oversaw the design and deployment of automated services in multi-cloud environments.
+
+<span id="c">Sr. Programmer Analyst | Argusoft</span>
+May 2018 - Aug 2018
+- Worked on a Risk Assessment & Compliance Software Suite for an auditing firm, covering areas like Access Management, SoD monitoring, Internal Controls, and Audit Management.
+- Integrated DevOps tools for observability and quality control to enhance the system’s reliability and speed of deployment.
+- Promoted within a short time due to contributions in speeding up implementation and adding value to the project.
+
+<span id="c">Software Engineer | Improwised Technologies Pvt. Ltd.</span>
+Apr 2017 - May 2018
+- Social Media App Development: Contributed to a voice merging feature in a social media application.
+- Utilized Docker and Docker Compose to automate deployment and ensure a smoother workflow, transitioning towards a DevOps-focused environment.
+- Began working on building scalable and automated systems, introducing DevOps best practices.
+
+<span id="c">Software Engineer | Improwised Technologies Pvt. Ltd.</span>
+Apr 2014 - Apr 2017
+- 2014 - 2015: Developed a custom logarithmic chart using D3.js for complex data visualization and analytics.
+- Built applications with Node.js (Koa) and custom frontend frameworks (before React, Angular, and Vue were widely adopted).
+- Worked on backend architectures for performance and efficiency.
+- 2016 - 2017: Continued work on the social media app, specializing in Docker to automate deployments and implement early DevOps practices.
+
+<span id="c">Software Engineer | Improwised Technologies Pvt. Ltd.</span>
+Apr 2013 - Apr 2014
+- Worked on a custom logarithmic chart using D3.js for complex data visualization.
+- Built applications with Node.js (Koa) and custom frontend frameworks before the rise of modern frontend frameworks like React and Angular.
+- Contributed to early-stage development of DevOps pipelines, utilizing Docker containers to improve deployment processes.
 
 <span id="a">### Thought Leadership & Speaking</span>
 - <span id="c">Designing for Cloud-Native Architectures</span> | Marwadi University
