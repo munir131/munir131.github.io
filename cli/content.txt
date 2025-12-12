@@ -1,9 +1,9 @@
 <span id="a">munir@zsh</span>:<span id="b">~</span><span id="c">$</span> cat me.md
 
 <span id="c">Munir Khakhi</span>
-<span id="c">Head of Engineering | System Architect | Cloud-Native Specialist</span>
+<span id="c">Remote Backend Infra Developer | Event Driven Architecture Specialist | Go & Node.js Expert</span>
 
-I’m an experienced engineering leader with over 12 years of expertise in designing and scaling cloud infrastructure, building microservices architectures, and leading engineering transformations.
+I’m an experienced <b>Remote Backend Infra Developer</b> based in India, with over 12 years of expertise in designing and scaling cloud infrastructure. I specialize in <b>Event Driven Architectures</b> using SQS, Google PubSub, Redis, and Apache Pulsar. I am a Go and Node.js expert.
 
 <span id="a">### Professional Profiles</span>
 - <span id="c">LinkedIn</span>: <a href="https://www.linkedin.com/in/munir-khakhi/" target="_blank">linkedin.com/in/munir-khakhi</a>
@@ -12,8 +12,9 @@ I’m an experienced engineering leader with over 12 years of expertise in desig
 
 <span id="a">### Core Competencies</span>
 - <span id="c">Cloud & Infrastructure</span> : AWS (EKS, S3, RDS), GCP (GKE, Pub/Sub), Azure
-- <span id="c">Architecture & Design</span>: Microservices, Event-Driven Architecture (EDA), Serverless
+- <span id="c">Event Driven Architecture</span>: SQS, Google PubSub, Redis, Apache Pulsar, Microservices
 - <span id="c">Containerization</span>      : Kubernetes, Docker, Podman, Helm
+- <span id="c">Programming</span>           : Go (Golang), Node.js (Best Practices), Python
 - <span id="c">DevOps & Automation</span>     : CI/CD, Terraform, Jenkins, GitLab CI, IaC
 - <span id="c">Security</span>              : Zero Trust, IAM, Cloud-Native Security
 - <span id="c">Leadership</span>            : Team Building, Strategic Roadmapping, Mentorship
