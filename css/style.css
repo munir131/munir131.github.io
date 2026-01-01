@@ -1,0 +1,40 @@
+:root {
+  --bg: #ffffff; --text: #333333; --accent: #0d9488;
+  --bg-dark: #0e1117; --text-light: #f0f0f0;
+  --header-bg: var(--accent);
+  --skill-bg: #f9f9f9;
+}
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-light);
+  --header-bg: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --skill-bg: #1a1a1a;
+}
+body { margin: 0; font: 1rem system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 800px; margin: auto; padding: 1rem; }
+header { text-align: center; padding: 2rem 1rem; background: var(--header-bg); color: #fff; position: relative; }
+header img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #fff; }
+h1 { margin: 0.5rem 0; font-size: 2rem; }
+header p { margin: 0.5rem 0; font-size: 1.1rem; }
+.theme-toggle { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; cursor: pointer; }
+nav { margin-top: 1.5rem; }
+nav ul { list-style: none; padding: 0; margin: 0; display: inline-flex; gap: 1rem; }
+nav a { color: #fff; text-decoration: none; font-weight: 500; }
+.section { padding: 3rem 1rem; }
+.section h2 { margin-top: 0; }
+.skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.skill-button { background: var(--accent); color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 0.25rem; cursor: pointer; }
+.skill-button:focus { outline: 3px dashed #ff0; }
+.skill-detail { max-width: 300px; margin-top: 0.5rem; padding: 0.75rem; background: var(--skill-bg); border-left: 3px solid var(--accent); display: none; }
+.skill-detail.visible { display: block; }
+.timeline { border-left: 2px solid var(--accent); padding-left: 1rem; }
+.job { margin-bottom: 2rem; }
+.job h3 { margin: 0; }
+.job span { font-size: 0.9rem; color: #666; }
+.btn { background: var(--accent); color: #fff; padding: 0.6rem 1rem; border: none; border-radius: 0.25rem; cursor: pointer; }
+.btn:hover { background: #0b7c72; }
+.contact-info { text-align: center; }
+/* Hide skip link by default */
+a { text-decoration: none; color: inherit; }
+.skip-link { position: absolute; left: -999px; top: 0; }
+.skip-link:focus { left: 0; top: 0; padding: 0.5rem; background: #000; color: #fff; }

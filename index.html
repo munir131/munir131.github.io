@@ -1,220 +1,163 @@
+<!-- index.html -->
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TV0WZTDY0L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <meta charset="utf-8">
+  <title>Munir Khakhi – Backend Infrastructure Developer</title>
+  <meta name="description" content="Munir Khakhi – Remote Backend/Infrastructure Developer, Go/Node.js expert with cloud architecture experience.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://optimizewithmunir.com/">
+  <link rel="icon" href="img/favicon.ico">
 
-    gtag('config', 'G-TV0WZTDY0L');
-  </script>
-  <meta charset="utf-8" />
-  <link rel="canonical" href="https://optimizewithmunir.com/" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" href="img/favicon.ico" sizes="any">
-  <link rel="icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Munir Khakhi - Remote Backend Infra Developer & Go Specialist</title>
-  <meta name="description" content="Munir Khakhi, Remote Backend Infra Developer based in India. Specialist in Event Driven Architecture (SQS, PubSub, Pulsar). Expert Go & Node.js developer with 12+ years experience.">
-  <meta name="keywords" content="Remote Backend Infra Developer, Indian Backend Infra Developer, Go Developer, Event Driven Architecture Specialist, SQS, Google PubSub, Redis, Apache Pulsar, Node.js, Cloud-Native">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Munir Khakhi – Backend Infrastructure Developer">
+  <meta property="og:description" content="Go and Node.js specialist in cloud and event-driven architectures.">
+  <meta property="og:url" content="https://optimizewithmunir.com/">
+  <meta property="og:image" content="https://optimizewithmunir.com/img/profile.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MunirKhakhi">
+  <meta name="twitter:title" content="Munir Khakhi – Backend Infrastructure Developer">
+  <meta name="twitter:description" content="Go and Node.js specialist in cloud and event-driven architectures.">
+  <meta name="twitter:image" content="https://optimizewithmunir.com/img/profile.png">
 
-  <meta property="og:title" content="Munir Khakhi - Remote Backend Infra Developer & Go Specialist" />
-  <meta property="og:description" content="Expert in Event Driven Architecture, Go, Node.js, and Cloud Infrastructure. 12+ years of experience." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://optimizewithmunir.com/" />
-  <meta property="og:image" content="https://optimizewithmunir.com/img/profile.png" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@MunirKhakhi" />
-  <meta name="twitter:creator" content="@MunirKhakhi" />
-  <meta name="twitter:title" content="Munir Khakhi - Remote Backend Infra Developer & Go Specialist" />
-  <meta name="twitter:description" content="Expert in Event Driven Architecture, Go, Node.js, and Cloud Infrastructure. 12+ years of experience." />
-  <meta name="twitter:image" content="https://optimizewithmunir.com/img/profile.png" />
+  <!-- Person Schema JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Munir Khakhi",
-    "url": "https://optimizewithmunir.com",
-    "jobTitle": "Remote Backend Infra Developer",
-    "knowsAbout": [
-      "Event Driven Architecture",
-      "Go (Programming Language)",
-      "Node.js",
-      "Amazon SQS",
-      "Google Cloud Pub/Sub",
-      "Redis",
-      "Apache Pulsar",
-      "Kubernetes",
-      "Microservices"
-    ],
-    "homeLocation": "India",
-    "nationality": "Indian",
+    "url": "https://optimizewithmunir.com/",
+    "jobTitle": "Remote Backend Infrastructure Developer",
+    "description": "Expert in Go, Node.js, and event-driven cloud architectures.",
+    "knowsAbout": ["Event-Driven Architecture", "Docker", "Go", "Node.js", "Microservices", "Kubernetes", ],
     "sameAs": [
-      "https://linkedin.com/in/munir-khakhi",
+      "https://www.linkedin.com/in/munir-khakhi",
       "https://github.com/munir131",
       "https://x.com/MunirKhakhi",
-      "https://g.dev/munirkhakhi"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Improwised Technologies"
-    }
+      "https://www.malt.com/profile/munirkhakhi",
+      "https://www.upwork.com/freelancers/~0133d608e15ab6cb45",
+      "https://stackoverflow.com/users/871029/munir",
+      "https://rajkot.tech/speakers/munir/",
+      "https://developers.google.com/profile/u/munirkhakhi"
+    ]
   }
   </script>
-  <link rel="stylesheet" href="cli/print.css" media="print">
-  <style>
-    body{margin:0;font-family:Inter,system-ui,sans-serif;background:#0b0f14;color:#e6eef8;line-height:1.6}
-    a{color:#06b6d4;text-decoration:none}
-    header{position:relative;padding:40px 20px;text-align:center;background:linear-gradient(90deg,#7c3aed,#06b6d4)}
-    header img{width:120px;height:120px;border-radius:50%;border:4px solid #fff;margin-bottom:20px}
-    header h1{margin:0;font-size:36px}
-    header p{margin:6px 0;font-size:18px;color:#e0e0ff}
-    nav{margin-top:12px}
-    nav a{margin:0 10px;font-weight:600;color:white}
-    .section{padding:60px 20px;max-width:1100px;margin:0 auto}
-    h2{margin-top:0;color:#dbeafe}
-    .skills{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
-    .skill-item{background:#1e293b;color:#dbeafe;padding:10px 14px;border-radius:999px;display:flex;align-items:center;cursor:pointer;position:relative;transition:background 0.2s}
-    .skill-item:hover{background:#334155}
-    .skill-item::after{content:"›";margin-left:8px;transition:transform 0.2s}
-    .skill-item.active::after{transform:rotate(90deg)}
-    .skill-detail{display:none;position:absolute;top:120%;left:0;background:#0f172a;color:#e2e8f0;padding:10px 14px;border-radius:8px;width:260px;z-index:10;font-size:14px;line-height:1.4}
-    .skill-item.active .skill-detail{display:block}
-    .timeline{border-left:2px solid #334155;margin-top:20px;padding-left:20px}
-    .job{margin-bottom:28px}
-    .job h3{margin:0;color:#f1f5f9}
-    .job span{color:#94a3b8;font-size:14px}
-    .talks ul{margin:0;padding-left:20px}
-    .header-buttons{position:absolute;top:20px;right:20px;display:flex;gap:12px}
-    .btn{background:#1e293b;color:#dbeafe;padding:10px 14px;border-radius:8px;border:1px solid #334155;cursor:pointer;font-weight:600}
-    .btn:hover{background:#334155}
-    .btn-primary{background:#06b6d4;color:#fff;border-color:#06b6d4}
-    .btn-primary:hover{background:#0891b2}
-    .contact-buttons{display:flex;gap:12px;margin-top:20px;justify-content:center}
-    .contact-buttons .btn{display:flex;align-items:center;gap:8px}
-    footer{background:#0f172a;padding:30px;text-align:center;color:#94a3b8}
-  </style>
-  <script>
-    document.addEventListener("DOMContentLoaded",()=>{
-      const skillItems = document.querySelectorAll(".skill-item");
-      skillItems.forEach(el=>{
-        el.addEventListener("click",()=>{
-          const wasActive = el.classList.contains("active");
-          skillItems.forEach(item=>item.classList.remove("active"));
-          if (!wasActive) {
-            el.classList.add("active");
-          }
-        });
-      });
-    });
-  </script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <header>
-    <div class="header-buttons">
-      <button class="btn" onclick="window.print()">Download CV</button>
-    </div>
-    <img src="img/profile.png" alt="Munir Khakhi">
+    <button class="theme-toggle" aria-label="Toggle light/dark mode">🌓</button>
+    <img src="img/profile.webp" alt="Photo of Munir Khakhi">
     <h1>Munir Khakhi</h1>
-    <p>Remote Backend Infra Developer | Event Driven Architecture Specialist | Go & Node.js Expert</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#talks">Talks</a>
-      <a href="https://blog.optimizewithmunir.com">Blog</a>
-      <a href="#contact">Contact</a>
+    <p>Remote Backend/Infrastructure Developer – Go & Node.js Expert</p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <!-- <li><a href="projects.html">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I’m an experienced <strong>Remote Backend Infra Developer</strong> based in India, with 12+ years of expertise in <strong>Go (Golang)</strong>, <strong>Node.js</strong>, and cloud infrastructure. I specialize in building scalable <strong>Event Driven Architectures</strong> using SQS, Google PubSub, Redis, and Apache Pulsar.</p>
-    <p>I believe in scalable, secure-by-design systems and in mentoring teams to deliver engineering excellence.</p>
-  </section>
+  <main id="main">
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <p>I’m a seasoned <strong>Backend Infrastructure Developer</strong> with 12+ years in building scalable, cloud-native systems. I specialize in <strong>Go (Golang)</strong>, <strong>Node.js</strong>, and <strong>event-driven architectures</strong> (e.g. Kafka, Pub/Sub). Based in India, I’ve led engineering teams to deliver resilient microservices and data pipelines using AWS, GCP, and Kubernetes.</p>
+    </section>
 
-  <section id="skills" class="section">
-    <h2>Core Competencies</h2>
-    <div class="skills">
-      <div class="skill-item">Cloud & Infrastructure
-        <div class="skill-detail">Hands-on with AWS (EKS, S3, RDS), GCP (GKE, Pub/Sub), Azure. Architected and scaled multi-cloud systems for high availability.</div>
+    <section id="skills" class="section container">
+      <h2>Core Skills</h2>
+      <div class="skills-list">
+        <button class="skill-button" aria-expanded="false" data-detail="cloud">Cloud & Infrastructure</button>
+        <button class="skill-button" aria-expanded="false" data-detail="event">Event-Driven Architecture</button>
+        <button class="skill-button" aria-expanded="false" data-detail="k8s">Containerization & Kubernetes</button>
+        <button class="skill-button" aria-expanded="false" data-detail="golang">Go (Golang)</button>
+        <button class="skill-button" aria-expanded="false" data-detail="nodejs">Node.js</button>
+        <button class="skill-button" aria-expanded="false" data-detail="devops">DevOps & Automation</button>
+        <button class="skill-button" aria-expanded="false" data-detail="security">Cloud Security</button>
+        <button class="skill-button" aria-expanded="false" data-detail="leadership">Leadership</button>
       </div>
-      <div class="skill-item">Event Driven Architecture
-        <div class="skill-detail">Specialist in SQS, Google PubSub, Redis, and Apache Pulsar based architectures. Expert in microservices and serverless designs.</div>
+      <div id="skill-details">
+        <div id="cloud" class="skill-detail" role="region">
+          Hands-on with AWS (EC2, Lambda, EKS), GCP (GKE, Pub/Sub), and Azure. Architected multi-cloud, high-availability systems.
+        </div>
+        <div id="event" class="skill-detail" role="region">
+          Expert in Kafka, Amazon SQS, Google Pub/Sub, and Pulsar. Designed resilient microservices with asynchronous messaging.
+        </div>
+        <div id="k8s" class="skill-detail" role="region">
+          Built container platforms with Docker, Kubernetes (EKS/GKE), and Helm. Automated deployments and monitoring.
+        </div>
+        <div id="golang" class="skill-detail" role="region">
+          Developed high-performance services in Go. Proficient with concurrency patterns, gRPC, and Go testing frameworks.
+        </div>
+        <div id="nodejs" class="skill-detail" role="region">
+          Built scalable APIs and real-time apps in Node.js/Express. Experience with TypeScript, Nest.js, and GraphQL.
+        </div>
+        <div id="devops" class="skill-detail" role="region">
+          Implemented CI/CD pipelines using GitHub Actions and Terraform for IaC. Automated infrastructure provisioning.
+        </div>
+        <div id="security" class="skill-detail" role="region">
+          Championed cloud security best practices (IAM, VPCs, network policies) and Zero Trust models in deployments.
+        </div>
+        <div id="leadership" class="skill-detail" role="region">
+          Mentored teams of 15+ engineers, led Agile roadmaps, and fostered collaborative, high-performance cultures.
+        </div>
       </div>
-      <div class="skill-item">Containerization
-        <div class="skill-detail">Deep expertise with Kubernetes, Docker, Podman, and Helm. Built resilient platforms and automated container-based deployments.</div>
-      </div>
-      <div class="skill-item">Go Developer (Golang)
-        <div class="skill-detail">Developed high-performance microservices and APIs. Experienced with Go concurrency patterns and testing frameworks.</div>
-      </div>
-      <div class="skill-item">Node.js Expert
-        <div class="skill-detail">Top-tier Node.js developer building scalable backend services and real-time applications using frameworks like Express.js.</div>
-      </div>
-      <div class="skill-item">DevOps & Automation
-        <div class="skill-detail">Implemented CI/CD pipelines with Jenkins, GitLab CI, and Terraform. Advocated Infrastructure-as-Code for consistent deployments.</div>
-      </div>
-      <div class="skill-item">Security
-        <div class="skill-detail">Championed Zero Trust models, IAM best practices, and cloud-native security controls for public cloud deployments.</div>
-      </div>
-      <div class="skill-item">Leadership
-        <div class="skill-detail">Mentored 15+ engineers, led strategic roadmapping, and built collaborative engineering cultures focused on excellence and growth.</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="experience" class="section">
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-      <div class="job">
-        <h3>Head of Engineering — Improwised Technologies</h3>
-        <span>Jul 2023 – Present</span>
-        <p>Leading engineering initiatives for cloud infrastructure, architected Kubernetes (EKS/GKE) solutions, and implemented a zero-trust model.</p>
+    <section id="experience" class="section container">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="job">
+          <h3>Head of Engineering – Improwised Technologies</h3>
+          <span>Jul 2023 – Present</span>
+          <p>Leading cloud strategy and infrastructure. Architected Kubernetes (EKS/GKE) solutions and a zero-trust security model for the organization.</p>
+        </div>
+        <div class="job">
+          <h3>Technical Team Lead – Improwised Technologies</h3>
+          <span>Sep 2018 – Aug 2023</span>
+          <p>Built high-traffic data streaming platforms in Go, using Kubernetes and Apache Pulsar. Drove cloud-native adoption and mentored team members.</p>
+        </div>
+        <div class="job">
+          <h3>Sr. Programmer Analyst – Argusoft</h3>
+          <span>May 2018 – Aug 2018</span>
+          <p>Developed a compliance & audit suite with integrated observability dashboards using Node.js and D3.js.</p>
+        </div>
+        <div class="job">
+          <h3>Software Engineer – Improwised Technologies</h3>
+          <span>2014 – 2018</span>
+          <p>Contributed to social media applications, data visualizations (D3.js), and built early DevOps pipelines with Docker.</p>
+        </div>
       </div>
-      <div class="job">
-        <h3>Technical Team Lead — Improwised Technologies</h3>
-        <span>Sep 2018 – Aug 2023</span>
-        <p>Built high-traffic data streaming platforms using Go, Kubernetes, and Pulsar. Drove cloud-native adoption and mentored engineers.</p>
-      </div>
-      <div class="job">
-        <h3>Sr. Programmer Analyst — Argusoft</h3>
-        <span>May 2018 – Aug 2018</span>
-        <p>Developed compliance and audit software suite with integrated DevOps observability.</p>
-      </div>
-      <div class="job">
-        <h3>Software Engineer — Improwised Technologies</h3>
-        <span>2014 – 2018</span>
-        <p>Built social media app features, custom D3.js charts, and early DevOps pipelines using Docker.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="talks" class="section talks">
-    <h2>Thought Leadership & Speaking</h2>
-    <ul>
-      <li>Code Quality with Gemini — GDG Cloud Rajkot</li>
-      <li>Designing for Cloud-Native Architectures — Marwadi University</li>
-      <li>Mastering Containers: Podman vs Docker — VVP Engineering College</li>
-      <li>Building Resilient Event-Driven Systems — GDG Cloud Rajkot</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="contact-buttons">
-        <!-- <a href="https://wa.me/YOUR_PHONE_NUMBER" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Hire Me</a> -->
-        <a href="mailto:munirkhakhi@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Hire Me</a>
-    </div>
-    <p>Email: <a href="mailto:munirkhakhi@gmail.com">munirkhakhi@gmail.com</a></p>
-    <p>Profiles: <a href="https://linkedin.com/in/munir-khakhi">LinkedIn</a> | <a href="https://github.com/munir131">GitHub</a> | <a href="https://x.com/MunirKhakhi">X</a></p>
-  </section>
+    <section id="contact" class="section container contact-info">
+      <h2>Contact</h2>
+      <p><a href="mailto:munirkhakhi@gmail.com" class="btn">Hire Me (Email)</a></p>
+      <p>Email: <a href="mailto:munirkhakhi@gmail.com">munirkhakhi@gmail.com</a></p>
+      <p>Connect: 
+         <a href="https://www.linkedin.com/in/munir-khakhi" aria-label="LinkedIn Profile">LinkedIn</a> | 
+         <a href="https://github.com/munir131" aria-label="GitHub Profile">GitHub</a> | 
+         <a href="https://x.com/MunirKhakhi" aria-label="X Profile">X</a>
+      </p>
+      <p><a href="munir-khakhi.pdf" class="btn">Download CV (PDF)</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Munir Khakhi</p>
+    <p style="text-align:center; padding:1rem 0; font-size:0.9rem; color:#666;">© <span id="current-year"></span> Munir Khakhi</p>
   </footer>
+
+  <!-- Theme toggle script -->
+  <script src="js/theme-toggle.js"></script>
 </body>
 </html>
