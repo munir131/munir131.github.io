@@ -1,45 +1,172 @@
-<!-- projects.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <title>Munir Khakhi – Projects & Portfolio</title>
-  <meta name="description" content="Portfolio of projects by Munir Khakhi, showcasing Go and cloud infrastructure solutions.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects – Munir Khakhi | Remote Backend Infrastructure Developer</title>
+  <meta name="description" content="Explore the portfolio of Munir Khakhi, a Remote Backend Infrastructure Developer. Featuring projects in Go, Node.js, Kubernetes, and Event-Driven Architectures.">
   <link rel="canonical" href="https://optimizewithmunir.com/projects.html">
-  <link rel="icon" href="img/favicon.ico">
-
+  
   <!-- Open Graph -->
-  <meta property="og:title" content="Munir Khakhi – Projects">
-  <meta property="og:description" content="Portfolio projects demonstrating Go-based microservices and cloud deployments.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://optimizewithmunir.com/projects.html">
-  <meta property="og:image" content="https://optimizewithmunir.com/img/project-screenshot.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Munir Khakhi – Projects">
-  <meta name="twitter:description" content="Portfolio projects demonstrating Go-based microservices and cloud deployments.">
-  <meta name="twitter:image" content="https://optimizewithmunir.com/img/project-screenshot.png">
+  <meta property="og:title" content="Projects – Munir Khakhi | Remote Backend Infrastructure Developer">
+  <meta property="og:description" content="Showcase of scalable backend and infrastructure projects by Munir Khakhi.">
+  <meta property="og:image" content="https://optimizewithmunir.com/img/profile.webp">
 
-  <!-- External CSS -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MunirKhakhi">
+  <meta name="twitter:creator" content="@MunirKhakhi">
+  <meta name="twitter:title" content="Projects – Munir Khakhi | Remote Backend Infrastructure Developer">
+  <meta name="twitter:description" content="Showcase of scalable backend and infrastructure projects by Munir Khakhi.">
+  <meta name="twitter:image" content="https://optimizewithmunir.com/img/profile.webp">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projects by Munir Khakhi",
+    "description": "A collection of backend infrastructure projects demonstrating expertise in Go, Node.js, and Cloud Native technologies.",
+    "author": {
+      "@type": "Person",
+      "name": "Munir Khakhi",
+      "jobTitle": "Remote Backend Infrastructure Developer",
+      "url": "https://optimizewithmunir.com/"
+    }
+  }
+  </script>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <header> ... same header ... </header>
-  <main id="main" class="container">
-    <section>
-      <h2>Project: Cloud Microservices Platform</h2>
-      <p>Developed a microservices platform in Go for processing IoT data streams. Used Kubernetes on AWS (EKS) for deployment, and Kafka for messaging. Implemented CI/CD with Jenkins. Outcome: Real-time analytics pipeline with 99.9% uptime.</p>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Munir Khakhi</a>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="projects.html" style="color: var(--primary-color)">Projects</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top: 2rem;">
+      <h1 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">All Projects</h1>
+      
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Cloud Microservices Platform</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/go" alt="" /> Go</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/kubernetes" alt="" /> Kubernetes</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/apachekafka" alt="" /> Kafka</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="" /> AWS EKS</span>
+            </div>
+            <p class="project-desc">A comprehensive microservices platform designed for high-throughput IoT data ingestion. Features include auto-scaling, self-healing capabilities, and real-time processing using Apache Kafka.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Event-Driven Billing System</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/awslambda/FF9900" alt="" /> AWS Lambda</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="" /> SQS</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/go" alt="" /> Go</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/terraform" alt="" /> Terraform</span>
+            </div>
+            <p class="project-desc">Serverless architecture for handling billing events. Replaced a legacy monolith, resulting in 30% cost reduction and improved reliability during peak load times.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Real-time Monitoring Dashboard</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/nodedotjs" alt="" /> Node.js</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/react" alt="" /> React</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/googlecloud" alt="" /> GCP</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/prometheus" alt="" /> Prometheus</span>
+            </div>
+            <p class="project-desc">Custom observability tool offering granular insights into system performance. Integrates with Prometheus for metrics and provides real-time alerts.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Zero Trust Security Implementation</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Security</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/kubernetes" alt="" /> Kubernetes</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/istio" alt="" /> Istio</span>
+            </div>
+            <p class="project-desc">Implemented a zero-trust network model for an enterprise Kubernetes cluster using Istio service mesh, ensuring strict identity verification for all internal traffic.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">DevOps Pipeline Automation</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/jenkins" alt="" /> Jenkins</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="" /> Docker</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/apachegroovy" alt="" /> Groovy</span>
+            </div>
+            <p class="project-desc">Standardized CI/CD pipelines across engineering teams, reducing deployment time from hours to minutes and integrating automated testing and security scans.</p>
+          </div>
+        </article>
+      </div>
     </section>
-    <section>
-      <h2>Project: Real-time Dashboard</h2>
-      <p>Built a Node.js and React dashboard for monitoring system metrics. Designed a secure REST API and integrated with Prometheus for metrics. Deployed on GCP (GKE) with Terraform. Outcome: 2x faster data refresh and consolidated monitoring solution.</p>
-    </section>
-    <section>
-      <h2>Project: Event-Driven Billing System</h2>
-      <p>Architected a billing system using AWS Lambda (Go) and SQS for event processing. Ensured security with IAM best practices. Outcome: Serverless design reduced costs by 30% and scaled to 10k events/sec.</p>
+
+    <section class="container contact-section" style="margin-top: 2rem;">
+      <h2>Have a project in mind?</h2>
+      <p>I'm always open to discussing new opportunities and technical challenges.</p>
+      <div class="contact-links">
+        <a href="mailto:munirkhakhi@gmail.com" class="btn btn-primary">Contact Me</a>
+      </div>
     </section>
   </main>
-  <footer> ... same footer ... </footer>
-  <script src="js/theme-toggle.js"></script>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Munir Khakhi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const icon = themeToggle;
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    icon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

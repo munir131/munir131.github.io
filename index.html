@@ -1,163 +1,425 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <title>Munir Khakhi – Backend Infrastructure Developer</title>
-  <meta name="description" content="Munir Khakhi – Remote Backend/Infrastructure Developer, Go/Node.js expert with cloud architecture experience.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munir Khakhi – Remote Backend Infrastructure Developer (Go & Node.js)</title>
+  <meta name="description" content="Munir Khakhi is a Remote Backend Infrastructure Developer with 12+ years of experience. Expert in Go (Golang), Node.js, Cloud Architecture (AWS/GCP), and Event-Driven Systems. Specializing in high-performance microservices and zero-trust security.">
+  <meta name="keywords" content="Remote Backend Developer, Infrastructure Developer, Go Developer, Golang Expert, Node.js Developer, AWS, GCP, Kubernetes, Event-Driven Architecture, Microservices, Zero Trust Security, Remote Work">
+  <meta name="author" content="Munir Khakhi">
   <link rel="canonical" href="https://optimizewithmunir.com/">
-  <link rel="icon" href="img/favicon.ico">
-
+  
   <!-- Open Graph -->
-  <meta property="og:title" content="Munir Khakhi – Backend Infrastructure Developer">
-  <meta property="og:description" content="Go and Node.js specialist in cloud and event-driven architectures.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://optimizewithmunir.com/">
-  <meta property="og:image" content="https://optimizewithmunir.com/img/profile.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@MunirKhakhi">
-  <meta name="twitter:title" content="Munir Khakhi – Backend Infrastructure Developer">
-  <meta name="twitter:description" content="Go and Node.js specialist in cloud and event-driven architectures.">
-  <meta name="twitter:image" content="https://optimizewithmunir.com/img/profile.png">
+  <meta property="og:title" content="Munir Khakhi – Remote Backend Infrastructure Developer">
+  <meta property="og:description" content="Expert Remote Backend Developer specializing in Go, Node.js, and Cloud Infrastructure. Building scalable, event-driven systems.">
+  <meta property="og:image" content="https://optimizewithmunir.com/img/profile.webp">
 
-  <!-- Person Schema JSON-LD -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MunirKhakhi">
+  <meta name="twitter:creator" content="@MunirKhakhi">
+  <meta name="twitter:title" content="Munir Khakhi – Remote Backend Infrastructure Developer">
+  <meta name="twitter:description" content="Expert Remote Backend Developer specializing in Go, Node.js, and Cloud Infrastructure. Building scalable, event-driven systems.">
+  <meta name="twitter:image" content="https://optimizewithmunir.com/img/profile.webp">
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Munir Khakhi",
-    "url": "https://optimizewithmunir.com/",
     "jobTitle": "Remote Backend Infrastructure Developer",
-    "description": "Expert in Go, Node.js, and event-driven cloud architectures.",
-    "knowsAbout": ["Event-Driven Architecture", "Docker", "Go", "Node.js", "Microservices", "Kubernetes", ],
+    "url": "https://optimizewithmunir.com/",
+    "image": "https://optimizewithmunir.com/img/profile.webp",
+    "description": "Experienced Remote Backend Infrastructure Developer specializing in Go, Node.js, and Cloud Architecture.",
     "sameAs": [
       "https://www.linkedin.com/in/munir-khakhi",
       "https://github.com/munir131",
-      "https://x.com/MunirKhakhi",
-      "https://www.malt.com/profile/munirkhakhi",
+      "https://twitter.com/MunirKhakhi",
       "https://www.upwork.com/freelancers/~0133d608e15ab6cb45",
-      "https://stackoverflow.com/users/871029/munir",
-      "https://rajkot.tech/speakers/munir/",
-      "https://developers.google.com/profile/u/munirkhakhi"
-    ]
+      "https://www.malt.com/profile/munirkhakhi"
+    ],
+    "knowsAbout": [
+      "Go (Golang)",
+      "Node.js",
+      "Backend Development",
+      "Cloud Infrastructure",
+      "AWS",
+      "Google Cloud Platform",
+      "Kubernetes",
+      "Docker",
+      "Event-Driven Architecture",
+      "Microservices",
+      "Zero Trust Security",
+      "Kafka",
+      "Pulsar"
+    ],
+    "workLocation": {
+      "@type": "Place",
+      "name": "Remote"
+    }
   }
   </script>
-
-  <!-- External CSS -->
+  <link rel="icon" href="img/favicon.ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
 <body>
 
-  <a href="#main" class="skip-link">Skip to main content</a>
-
   <header>
-    <button class="theme-toggle" aria-label="Toggle light/dark mode">🌓</button>
-    <img src="img/profile.webp" alt="Photo of Munir Khakhi">
-    <h1>Munir Khakhi</h1>
-    <p>Remote Backend/Infrastructure Developer – Go & Node.js Expert</p>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="index.html#experience">Experience</a></li>
-        <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <!-- <li><a href="projects.html">Projects</a></li> -->
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="/" class="logo">Munir Khakhi</a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <section id="about" class="section container">
-      <h2>About Me</h2>
-      <p>I’m a seasoned <strong>Backend Infrastructure Developer</strong> with 12+ years in building scalable, cloud-native systems. I specialize in <strong>Go (Golang)</strong>, <strong>Node.js</strong>, and <strong>event-driven architectures</strong> (e.g. Kafka, Pub/Sub). Based in India, I’ve led engineering teams to deliver resilient microservices and data pipelines using AWS, GCP, and Kubernetes.</p>
-    </section>
-
-    <section id="skills" class="section container">
-      <h2>Core Skills</h2>
-      <div class="skills-list">
-        <button class="skill-button" aria-expanded="false" data-detail="cloud">Cloud & Infrastructure</button>
-        <button class="skill-button" aria-expanded="false" data-detail="event">Event-Driven Architecture</button>
-        <button class="skill-button" aria-expanded="false" data-detail="k8s">Containerization & Kubernetes</button>
-        <button class="skill-button" aria-expanded="false" data-detail="golang">Go (Golang)</button>
-        <button class="skill-button" aria-expanded="false" data-detail="nodejs">Node.js</button>
-        <button class="skill-button" aria-expanded="false" data-detail="devops">DevOps & Automation</button>
-        <button class="skill-button" aria-expanded="false" data-detail="security">Cloud Security</button>
-        <button class="skill-button" aria-expanded="false" data-detail="leadership">Leadership</button>
-      </div>
-      <div id="skill-details">
-        <div id="cloud" class="skill-detail" role="region">
-          Hands-on with AWS (EC2, Lambda, EKS), GCP (GKE, Pub/Sub), and Azure. Architected multi-cloud, high-availability systems.
-        </div>
-        <div id="event" class="skill-detail" role="region">
-          Expert in Kafka, Amazon SQS, Google Pub/Sub, and Pulsar. Designed resilient microservices with asynchronous messaging.
-        </div>
-        <div id="k8s" class="skill-detail" role="region">
-          Built container platforms with Docker, Kubernetes (EKS/GKE), and Helm. Automated deployments and monitoring.
-        </div>
-        <div id="golang" class="skill-detail" role="region">
-          Developed high-performance services in Go. Proficient with concurrency patterns, gRPC, and Go testing frameworks.
-        </div>
-        <div id="nodejs" class="skill-detail" role="region">
-          Built scalable APIs and real-time apps in Node.js/Express. Experience with TypeScript, Nest.js, and GraphQL.
-        </div>
-        <div id="devops" class="skill-detail" role="region">
-          Implemented CI/CD pipelines using GitHub Actions and Terraform for IaC. Automated infrastructure provisioning.
-        </div>
-        <div id="security" class="skill-detail" role="region">
-          Championed cloud security best practices (IAM, VPCs, network policies) and Zero Trust models in deployments.
-        </div>
-        <div id="leadership" class="skill-detail" role="region">
-          Mentored teams of 15+ engineers, led Agile roadmaps, and fostered collaborative, high-performance cultures.
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img src="img/profile.webp" alt="Munir Khakhi" class="hero-img">
+        <h1>Building Scalable Cloud<br>Infrastructure & Backend Systems</h1>
+        <p>I'm Munir, a Backend Infrastructure Developer with 12+ years of experience in Go, Node.js, and Event-Driven Architectures.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="munir-khakhi.pdf" class="btn btn-secondary">Download Resume</a>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section container">
-      <h2>Professional Experience</h2>
+    <section id="about" class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2>About Me</h2>
+        <p style="font-size: 1.1rem; color: var(--text-muted);">
+          I specialize in designing and implementing resilient, cloud-native systems. With deep expertise in <strong>Go (Golang)</strong> and <strong>Node.js</strong>, I architect microservices that scale. Based in India, I've led engineering teams to success, championing <strong>Zero Trust security</strong> and <strong>Event-Driven Design</strong> patterns using Kafka, Pulsar, and Cloud Pub/Sub.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Technical Arsenal</h2>
+      
+      <div class="skill-category">
+        <h3>Backend & Frameworks</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/go" alt="Go" /></span>
+            <span class="skill-name">Go</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/go" alt="Go Fiber" /></span>
+            <span class="skill-name">Go Fiber</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" /></span>
+            <span class="skill-name">Node.js</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/express" alt="Express.js" /></span>
+            <span class="skill-name">Express.js</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/bun" alt="Bun.js" /></span>
+            <span class="skill-name">Bun.js</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/laravel" alt="Laravel" /></span>
+            <span class="skill-name">Laravel</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/react" alt="React" /></span>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js" /></span>
+            <span class="skill-name">Vue.js</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/angular" alt="Angular" /></span>
+            <span class="skill-name">Angular</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/jquery" alt="jQuery" /></span>
+            <span class="skill-name">jQuery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Cloud & Infrastructure</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS" /></span>
+            <span class="skill-name">AWS</span>
+          </div>
+           <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/googlecloud" alt="GCP" /></span>
+            <span class="skill-name">GCP</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" /></span>
+            <span class="skill-name">Docker</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes" /></span>
+            <span class="skill-name">Kubernetes</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/helm" alt="Helm" /></span>
+            <span class="skill-name">Helm</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/terraform" alt="Terraform" /></span>
+            <span class="skill-name">Terraform</span>
+          </div>
+           <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazons3/FF9900" alt="S3" /></span>
+            <span class="skill-name">S3</span>
+          </div>
+           <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/googlecloud" alt="GCS" /></span>
+            <span class="skill-name">GCS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Data & Messaging</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/postgresql" alt="Postgres" /></span>
+            <span class="skill-name">Postgres</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/redis" alt="Redis" /></span>
+            <span class="skill-name">Redis</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/apachekafka" alt="Kafka" /></span>
+            <span class="skill-name">Kafka</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/apachepulsar" alt="Pulsar" /></span>
+            <span class="skill-name">Pulsar</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/googlepubsub" alt="Pub/Sub" /></span>
+            <span class="skill-name">Pub/Sub</span>
+          </div>
+           <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazonsqs/FF9900" alt="SQS" /></span>
+            <span class="skill-name">SQS</span>
+          </div>
+           <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazonsns/FF9900" alt="SNS" /></span>
+            <span class="skill-name">SNS</span>
+          </div>
+           <div class="skill-card">
+            <span class="skill-icon">
+             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </span>
+            <span class="skill-name">River Jobs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>DevOps & Observability</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/githubactions" alt="GitHub Actions" /></span>
+            <span class="skill-name">GitHub Actions</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/circleci" alt="CircleCI" /></span>
+            <span class="skill-name">CircleCI</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/prometheus" alt="Prometheus" /></span>
+            <span class="skill-name">Prometheus</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/grafana" alt="Grafana" /></span>
+            <span class="skill-name">Grafana</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/jaegertracing" alt="Jaeger" /></span>
+            <span class="skill-name">Jaeger</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/sentry" alt="Sentry" /></span>
+            <span class="skill-name">Sentry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Security & Architecture</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon"><img src="https://cdn.simpleicons.org/swagger" alt="Swagger" /></span>
+            <span class="skill-name">Swagger</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </span>
+            <span class="skill-name">REST API</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </span>
+            <span class="skill-name">RBAC</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
+            </span>
+            <span class="skill-name">OAuth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Cloud Microservices Platform</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/go" alt="" /> Go</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/kubernetes" alt="" /> Kubernetes</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/apachekafka" alt="" /> Kafka</span>
+            </div>
+            <p class="project-desc">Real-time IoT data processing platform handling high throughput with 99.9% uptime. Deployed on AWS EKS with fully automated CI/CD pipelines.</p>
+            <div class="project-links">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Event-Driven Billing System</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/awslambda/FF9900" alt="" /> AWS Lambda</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="" /> SQS</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/go" alt="" /> Go</span>
+            </div>
+            <p class="project-desc">Serverless billing architecture that reduced operational costs by 30%. Scalable to 10k events/sec with IAM security best practices.</p>
+            <div class="project-links">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Real-time Monitoring Dashboard</h3>
+            <div class="project-tech">
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/nodedotjs" alt="" /> Node.js</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/react" alt="" /> React</span>
+              <span class="tech-tag"><img src="https://cdn.simpleicons.org/googlecloud" alt="" /> GCP</span>
+            </div>
+            <p class="project-desc">Custom observability suite integrating with Prometheus. Improved data refresh rates by 2x for critical system metrics.</p>
+            <div class="project-links">
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+      </div>
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Experience</h2>
       <div class="timeline">
-        <div class="job">
-          <h3>Head of Engineering – Improwised Technologies</h3>
-          <span>Jul 2023 – Present</span>
-          <p>Leading cloud strategy and infrastructure. Architected Kubernetes (EKS/GKE) solutions and a zero-trust security model for the organization.</p>
+        <div class="timeline-item">
+          <span class="timeline-date">Jul 2023 – Present</span>
+          <h3 class="timeline-role">Head of Engineering</h3>
+          <div class="timeline-company">Improwised Technologies</div>
+          <p class="timeline-desc">Leading cloud strategy, architecting zero-trust Kubernetes solutions, and managing infrastructure teams.</p>
         </div>
-        <div class="job">
-          <h3>Technical Team Lead – Improwised Technologies</h3>
-          <span>Sep 2018 – Aug 2023</span>
-          <p>Built high-traffic data streaming platforms in Go, using Kubernetes and Apache Pulsar. Drove cloud-native adoption and mentored team members.</p>
+        <div class="timeline-item">
+          <span class="timeline-date">Sep 2018 – Aug 2023</span>
+          <h3 class="timeline-role">Technical Team Lead</h3>
+          <div class="timeline-company">Improwised Technologies</div>
+          <p class="timeline-desc">Built data streaming platforms (Go/Pulsar), drove cloud-native adoption, and mentored engineers.</p>
         </div>
-        <div class="job">
-          <h3>Sr. Programmer Analyst – Argusoft</h3>
-          <span>May 2018 – Aug 2018</span>
-          <p>Developed a compliance & audit suite with integrated observability dashboards using Node.js and D3.js.</p>
-        </div>
-        <div class="job">
-          <h3>Software Engineer – Improwised Technologies</h3>
-          <span>2014 – 2018</span>
-          <p>Contributed to social media applications, data visualizations (D3.js), and built early DevOps pipelines with Docker.</p>
+        <div class="timeline-item">
+          <span class="timeline-date">May 2018 – Aug 2018</span>
+          <h3 class="timeline-role">Sr. Programmer Analyst</h3>
+          <div class="timeline-company">Argusoft</div>
+          <p class="timeline-desc">Developed compliance & audit suites with custom observability dashboards.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section container contact-info">
-      <h2>Contact</h2>
-      <p><a href="mailto:munirkhakhi@gmail.com" class="btn">Hire Me (Email)</a></p>
-      <p>Email: <a href="mailto:munirkhakhi@gmail.com">munirkhakhi@gmail.com</a></p>
-      <p>Connect: 
-         <a href="https://www.linkedin.com/in/munir-khakhi" aria-label="LinkedIn Profile">LinkedIn</a> | 
-         <a href="https://github.com/munir131" aria-label="GitHub Profile">GitHub</a> | 
-         <a href="https://x.com/MunirKhakhi" aria-label="X Profile">X</a>
-      </p>
-      <p><a href="munir-khakhi.pdf" class="btn">Download CV (PDF)</a></p>
+    <section id="contact" class="container">
+      <div class="contact-section">
+        <h2>Ready to Scale?</h2>
+        <p>Whether you need a backend overhaul, cloud migration, or infrastructure audit, let's talk.</p>
+        <div class="contact-links">
+          <a href="mailto:munirkhakhi@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="https://www.upwork.com/freelancers/~0133d608e15ab6cb45" class="btn btn-secondary">Hire on Upwork</a>
+          <a href="https://www.malt.com/profile/munirkhakhi" class="btn btn-secondary">Hire on Malt</a>
+          <a href="https://www.linkedin.com/in/munir-khakhi" class="btn btn-secondary">LinkedIn</a>
+          <a href="https://github.com/munir131" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <footer>
-    <p style="text-align:center; padding:1rem 0; font-size:0.9rem; color:#666;">© <span id="current-year"></span> Munir Khakhi</p>
+    <div class="container">
+      <p>© <span id="year"></span> Munir Khakhi. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- Theme toggle script -->
-  <script src="js/theme-toggle.js"></script>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const icon = themeToggle;
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    icon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
