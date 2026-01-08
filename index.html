@@ -68,7 +68,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <style>
     body { font-family: 'Inter', sans-serif; }
   </style>
@@ -83,7 +83,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#experience">Experience</a></li> -->
           <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
           <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
@@ -94,7 +94,7 @@
   <main>
     <section class="hero">
       <div class="container">
-        <img src="img/profile.webp" alt="Munir Khakhi" class="hero-img">
+        <img fetchpriority="high" src="img/profile.webp" alt="Munir Khakhi" class="hero-img">
         <h1>Building Scalable Cloud<br>Infrastructure & Backend Systems</h1>
         <p>I'm Munir, a Backend Infrastructure Developer with 12+ years of experience in Go, Node.js, and Event-Driven Architectures.</p>
         <div class="hero-actions">
@@ -111,6 +111,9 @@
           I specialize in designing and implementing resilient, cloud-native systems. With deep expertise in <strong>Go (Golang)</strong> and <strong>Node.js</strong>, I architect microservices that scale. Based in India, I've led engineering teams to success, championing <strong>Zero Trust security</strong> and <strong>Event-Driven Design</strong> patterns using Kafka, Pulsar, and Cloud Pub/Sub.
         </p>
       </div>
+      <br>
+      <br>
+      <br>
     </section>
 
     <section id="skills" class="container">
@@ -120,27 +123,27 @@
         <h3>Backend & Frameworks</h3>
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/go" alt="Go" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/go.svg" alt="Go" /></span>
             <span class="skill-name">Go</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/go" alt="Go Fiber" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/go.svg" alt="Go Fiber" /></span>
             <span class="skill-name">Go Fiber</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/nodedotjs.svg" alt="Node.js" /></span>
             <span class="skill-name">Node.js</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/express" alt="Express.js" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/express.svg" alt="Express.js" /></span>
             <span class="skill-name">Express.js</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/bun" alt="Bun.js" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/bun.svg" alt="Bun.js" /></span>
             <span class="skill-name">Bun.js</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/laravel" alt="Laravel" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/laravel.svg" alt="Laravel" /></span>
             <span class="skill-name">Laravel</span>
           </div>
         </div>
@@ -150,19 +153,19 @@
         <h3>Frontend</h3>
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/react" alt="React" /></span>
-            <span class="skill-name">React</span>
-          </div>
-          <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js" /></span>
-            <span class="skill-name">Vue.js</span>
-          </div>
-          <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/angular" alt="Angular" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/angular.svg" alt="Angular" /></span>
             <span class="skill-name">Angular</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/jquery" alt="jQuery" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/react.svg" alt="React" /></span>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img loading="lazy" src="img/vuedotjs.svg" alt="Vue.js" /></span>
+            <span class="skill-name">Vue.js</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img loading="lazy" src="img/jquery.svg" alt="jQuery" /></span>
             <span class="skill-name">jQuery</span>
           </div>
         </div>
@@ -172,35 +175,35 @@
         <h3>Cloud & Infrastructure</h3>
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS" /></span>
+            <span class="skill-icon"><img loading="lazy" src="./img/aws.svg" alt="AWS" /></span>
             <span class="skill-name">AWS</span>
           </div>
            <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/googlecloud" alt="GCP" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/googlecloud.svg" alt="GCP" /></span>
             <span class="skill-name">GCP</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/docker.svg" alt="Docker" /></span>
             <span class="skill-name">Docker</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/kubernetes.svg" alt="Kubernetes" /></span>
             <span class="skill-name">Kubernetes</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/helm" alt="Helm" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/helm.svg" alt="Helm" /></span>
             <span class="skill-name">Helm</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/terraform" alt="Terraform" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/terraform.svg" alt="Terraform" /></span>
             <span class="skill-name">Terraform</span>
           </div>
            <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazons3/FF9900" alt="S3" /></span>
+            <span class="skill-icon"><img loading="lazy" src="./img/s3.svg" alt="S3" /></span>
             <span class="skill-name">S3</span>
           </div>
            <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/googlecloud" alt="GCS" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/googlecloud.svg" alt="GCS" /></span>
             <span class="skill-name">GCS</span>
           </div>
         </div>
@@ -210,31 +213,31 @@
         <h3>Data & Messaging</h3>
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/postgresql" alt="Postgres" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/postgresql.svg" alt="Postgres" /></span>
             <span class="skill-name">Postgres</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/redis" alt="Redis" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/redis.svg" alt="Redis" /></span>
             <span class="skill-name">Redis</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/apachekafka" alt="Kafka" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/apachekafka.svg" alt="Kafka" /></span>
             <span class="skill-name">Kafka</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/apachepulsar" alt="Pulsar" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/apachepulsar.svg" alt="Pulsar" /></span>
             <span class="skill-name">Pulsar</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/googlepubsub" alt="Pub/Sub" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/googlepubsub.svg" alt="Pub/Sub" /></span>
             <span class="skill-name">Pub/Sub</span>
           </div>
            <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazonsqs/FF9900" alt="SQS" /></span>
+            <span class="skill-icon"><img loading="lazy" src="./img/Res_Amazon-Simple-Queue-Service_Message_48.svg" alt="SQS" /></span>
             <span class="skill-name">SQS</span>
           </div>
            <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/amazonsns/FF9900" alt="SNS" /></span>
+            <span class="skill-icon"><img loading="lazy" src="./img/Res_Amazon-Simple-Notification-Service_Topic_48.svg" alt="SNS" /></span>
             <span class="skill-name">SNS</span>
           </div>
            <div class="skill-card">
@@ -250,27 +253,31 @@
         <h3>DevOps & Observability</h3>
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/githubactions" alt="GitHub Actions" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/githubactions.svg" alt="GitHub Actions" /></span>
             <span class="skill-name">GitHub Actions</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/circleci" alt="CircleCI" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/circleci.svg" alt="CircleCI" /></span>
             <span class="skill-name">CircleCI</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/prometheus" alt="Prometheus" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/prometheus.svg" alt="Prometheus" /></span>
             <span class="skill-name">Prometheus</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/grafana" alt="Grafana" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/grafana.svg" alt="Grafana" /></span>
             <span class="skill-name">Grafana</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/jaegertracing" alt="Jaeger" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/jaeger.svg" alt="Jaeger" /></span>
             <span class="skill-name">Jaeger</span>
           </div>
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/sentry" alt="Sentry" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/opentelemetry.svg" alt="OpenTelemetry" /></span>
+            <span class="skill-name">OpenTelemetry</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon"><img loading="lazy" src="img/sentry.svg" alt="Sentry" /></span>
             <span class="skill-name">Sentry</span>
           </div>
         </div>
@@ -280,7 +287,7 @@
         <h3>Security & Architecture</h3>
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="skill-icon"><img src="https://cdn.simpleicons.org/swagger" alt="Swagger" /></span>
+            <span class="skill-icon"><img loading="lazy" src="img/swagger.svg" alt="Swagger" /></span>
             <span class="skill-name">Swagger</span>
           </div>
           <div class="skill-card">
@@ -312,9 +319,9 @@
           <div class="project-content">
             <h3 class="project-title">Cloud Microservices Platform</h3>
             <div class="project-tech">
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/go" alt="" /> Go</span>
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/kubernetes" alt="" /> Kubernetes</span>
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/apachekafka" alt="" /> Kafka</span>
+              <span class="tech-tag"><img loading="lazy" src="img/go.svg" alt="" /> Go</span>
+              <span class="tech-tag"><img loading="lazy" src="img/kubernetes.svg" alt="" /> Kubernetes</span>
+              <span class="tech-tag"><img loading="lazy" src="img/apachekafka.svg" alt="" /> Kafka</span>
             </div>
             <p class="project-desc">Real-time IoT data processing platform handling high throughput with 99.9% uptime. Deployed on AWS EKS with fully automated CI/CD pipelines.</p>
             <div class="project-links">
@@ -326,9 +333,9 @@
           <div class="project-content">
             <h3 class="project-title">Event-Driven Billing System</h3>
             <div class="project-tech">
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/awslambda/FF9900" alt="" /> AWS Lambda</span>
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="" /> SQS</span>
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/go" alt="" /> Go</span>
+              <span class="tech-tag"><img loading="lazy" src="img/awslambda.svg" alt="" /> AWS Lambda</span>
+              <span class="tech-tag"><img loading="lazy" src="img/amazonaws.svg" alt="" /> SQS</span>
+              <span class="tech-tag"><img loading="lazy" src="img/go.svg" alt="" /> Go</span>
             </div>
             <p class="project-desc">Serverless billing architecture that reduced operational costs by 30%. Scalable to 10k events/sec with IAM security best practices.</p>
             <div class="project-links">
@@ -340,9 +347,9 @@
           <div class="project-content">
             <h3 class="project-title">Real-time Monitoring Dashboard</h3>
             <div class="project-tech">
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/nodedotjs" alt="" /> Node.js</span>
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/react" alt="" /> React</span>
-              <span class="tech-tag"><img src="https://cdn.simpleicons.org/googlecloud" alt="" /> GCP</span>
+              <span class="tech-tag"><img loading="lazy" src="img/nodedotjs.svg" alt="" /> Node.js</span>
+              <span class="tech-tag"><img loading="lazy" src="img/react.svg" alt="" /> React</span>
+              <span class="tech-tag"><img loading="lazy" src="img/googlecloud.svg" alt="" /> GCP</span>
             </div>
             <p class="project-desc">Custom observability suite integrating with Prometheus. Improved data refresh rates by 2x for critical system metrics.</p>
             <div class="project-links">
@@ -353,9 +360,10 @@
       <div style="text-align: center; margin-top: 2rem;">
         <a href="projects.html" class="btn btn-secondary">View All Projects</a>
       </div>
+      <br>
     </section>
 
-    <section id="experience" class="container">
+    <!-- <section id="experience" class="container">
       <h2>Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
@@ -377,15 +385,15 @@
           <p class="timeline-desc">Developed compliance & audit suites with custom observability dashboards.</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="contact" class="container">
       <div class="contact-section">
         <h2>Ready to Scale?</h2>
         <p>Whether you need a backend overhaul, cloud migration, or infrastructure audit, let's talk.</p>
         <div class="contact-links">
-          <a href="mailto:munirkhakhi@gmail.com" class="btn btn-primary">Email Me</a>
-          <a href="https://www.upwork.com/freelancers/~0133d608e15ab6cb45" class="btn btn-secondary">Hire on Upwork</a>
+          <a href="https://www.upwork.com/freelancers/~0133d608e15ab6cb45" class="btn btn-primary">Hire on Upwork</a>
+          <a href="mailto:munirkhakhi@gmail.com" class="btn btn-secondary">Email Me</a>
           <a href="https://www.malt.com/profile/munirkhakhi" class="btn btn-secondary">Hire on Malt</a>
           <a href="https://www.linkedin.com/in/munir-khakhi" class="btn btn-secondary">LinkedIn</a>
           <a href="https://github.com/munir131" class="btn btn-secondary">GitHub</a>
@@ -401,25 +409,6 @@
     </div>
   </footer>
 
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-    const icon = themeToggle;
-
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    html.setAttribute('data-theme', savedTheme);
-    icon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>const themeToggle = document.getElementById('theme-toggle');const html = document.documentElement;const icon = themeToggle;const savedTheme = localStorage.getItem('theme') || 'light';html.setAttribute('data-theme', savedTheme);icon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';themeToggle.addEventListener('click', () => {const currentTheme = html.getAttribute('data-theme');const newTheme = currentTheme === 'light' ? 'dark' : 'light';html.setAttribute('data-theme', newTheme);localStorage.setItem('theme', newTheme);icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';});document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
