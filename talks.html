@@ -1,86 +1,416 @@
-<!-- talks.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <title>Munir Khakhi – Speaking Engagements</title>
-  <meta name="description" content="Talks and conferences where Munir Khakhi shared expertise on cloud architecture and microservices.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munir Khakhi – Tech Speaker & Laravel Expert</title>
+  <meta name="description" content="Munir Khakhi is an experienced tech speaker and Laravel expert. Explore his talks on Cloud-Native Architectures, Frontend Development, and more.">
+  <meta name="keywords" content="Munir Khakhi, Tech Speaker, Laravel, Cloud Native, Javascript Gujarat, GDG Cloud Rajkot">
+  <meta name="author" content="Munir Khakhi">
   <link rel="canonical" href="https://optimizewithmunir.com/talks.html">
-  <link rel="icon" href="img/favicon.ico">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Munir Khakhi – Talks & Speaking">
-  <meta property="og:description" content="Keynote speeches and talks on cloud-native architectures and backend development.">
+  
+  
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://optimizewithmunir.com/talks.html">
-  <meta property="og:image" content="https://optimizewithmunir.com/img/profile.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Munir Khakhi – Talks & Speaking">
-  <meta name="twitter:description" content="Keynote speeches and talks on cloud-native architectures.">
-  <meta name="twitter:image" content="https://optimizewithmunir.com/img/profile.png">
+  <meta property="og:title" content="Munir Khakhi – Tech Speaker & Laravel Expert">
+  <meta property="og:description" content="Explore Munir Khakhi's tech talks and speaking engagements.">
+  <meta property="og:image" content="https://optimizewithmunir.com/img/js-gujarat/js-gujarat-1.jpeg">
 
-  <!-- Speaker Schema JSON-LD -->
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MunirKhakhi">
+  <meta name="twitter:creator" content="@MunirKhakhi">
+  <meta name="twitter:title" content="Munir Khakhi – Tech Speaker & Laravel Expert">
+  <meta name="twitter:description" content="Explore Munir Khakhi's tech talks and speaking engagements.">
+  <meta name="twitter:image" content="https://optimizewithmunir.com/img/js-gujarat/js-gujarat-1.jpeg">
+
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Munir Khakhi",
-    "url": "https://optimizewithmunir.com/",
-    "jobTitle": "Technology Speaker",
-    "description": "Conference speaker specializing in cloud architectures and Go development.",
-    "knowsAbout": ["Cloud Infrastructure", "Microservices", "Backend Development"],
-    "event": [
-      {
-        "@type": "Event",
-        "name": "Mastering Containers: Podman vs Docker",
-        "startDate": "2024-07-10",
-        "location": "VVP Engineering College"
-      },
-      {
-        "@type": "Event",
-        "name": "Building Resilient Event-Driven Systems",
-        "startDate": "2024-05-20",
-        "location": "GDG Cloud Rajkot"
-      }
-    ]
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Munir Khakhi",
+      "jobTitle": "Tech Speaker & Laravel Expert",
+      "description": "Munir is a Laravel developer with huge experience. He is known for his expertise in building end-to-end Laravel Apps, & he is passionate about helping others learn Laravel.",
+      "image": "https://optimizewithmunir.com/img/profile.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/munir-khakhi",
+        "https://github.com/munir131",
+        "https://twitter.com/MunirKhakhi"
+      ]
+    }
   }
   </script>
 
-  <!-- External CSS -->
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .speaker-hero {
+      text-align: center;
+      padding: 4rem 0;
+      background-color: var(--secondary-bg);
+      margin-bottom: 2rem;
+    }
+    .speaker-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+    .speaker-hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+    }
+    .speaker-bio {
+      max-width: 800px;
+      margin: 0 auto 4rem auto;
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--card-bg);
+      border-radius: 1rem;
+      box-shadow: var(--card-shadow);
+    }
+    .speaker-bio h2 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    .speaker-bio p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .talks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .talk-card {
+      background-color: var(--card-bg);
+      border-radius: 0.5rem;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .talk-card:hover {
+      transform: translateY(-5px);
+    }
+    .talk-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .talk-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .talk-date {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .talk-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+      line-height: 1.3;
+    }
+    .talk-event {
+      font-size: 1rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .talk-desc {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 0.25rem;
+      transition: opacity 0.2s;
+    }
+    .gallery img:hover {
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .speaker-hero h1 { font-size: 2rem; }
+      .talks-grid { grid-template-columns: 1fr; }
+    }
+    /* Lightbox Styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .lightbox.active {
+      display: flex;
+    }
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+      padding: 20px;
+      user-select: none;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+    }
+    .lightbox-nav:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    .lightbox-prev {
+      left: 20px;
+    }
+    .lightbox-next {
+      right: 20px;
+    }
+    .gallery img, .talk-image {
+        cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
+
   <header>
-    <button class="theme-toggle" aria-label="Toggle light/dark mode">🌓</button>
-    <img fetchpriority="high" src="img/profile.webp" alt="Photo of Munir Khakhi">
-    <h1>Munir Khakhi</h1>
-    <p>Remote Backend/Infrastructure Developer – Go & Node.js Expert</p>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="index.html#experience">Experience</a></li>
-        <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <!-- <li><a href="projects.html">Projects</a></li> -->
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="/" class="logo">Munir Khakhi</a>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="talks.html" style="color: var(--primary-color);">Talks</a></li>
+          <li><a href="https://blog.optimizewithmunir.com">Blog</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main id="main" class="container">
-    <h2>Speaking Engagements</h2>
-    <ul>
-        <li><strong>Code Quality with Gemini</strong> – GDG Cloud Rajkot, Dec 2025</li>
-        <li><strong>Designing Cloud-Native Architectures</strong> – Marwadi University, Feb 2025</li>
-      <li><strong>Mastering Containers: Podman vs Docker</strong> – Presented at VVP Engineering College, Jul 2024</li>
-      <li><strong>Building Resilient Event-Driven Systems</strong> – GDG Cloud Rajkot, May 2024</li>
-    </ul>
-    <p>These talks cover topics like containerization (Docker/Podman), microservices, and cloud best practices. I enjoy sharing knowledge and engaging with the developer community.</p>
+
+  <main>
+    <section class="speaker-hero">
+      <div class="container">
+        <h1>Sharing Knowledge & Building Communities</h1>
+        <p>Tech Speaker | Laravel Expert | Cloud Architect</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="speaker-bio">
+        <h2>About the Speaker</h2>
+        <p>Munir Khakhi is a seasoned Backend Infrastructure Developer with over 12 years of experience in building scalable, cloud-native systems. While widely recognized for his deep expertise in <strong>Laravel</strong> and helping developers master the framework, he is also a polyglot engineer proficient in <strong>Go (Golang)</strong> and <strong>Node.js</strong>. Munir specializes in architecting resilient <strong>Event-Driven Microservices</strong>, implementing <strong>Zero Trust Security</strong>, and optimizing cloud infrastructure on <strong>AWS</strong> and <strong>GCP</strong>. Passionate about sharing knowledge, he frequently speaks on topics ranging from containerization to code quality.💫</p>
+      </div>
+
+      <h2 style="text-align: center; margin-bottom: 2rem;">Speaking Engagements</h2>
+      <div class="talks-grid">
+        <article class="talk-card">
+          <img src="img/js-gujarat/js-gujarat-1.jpeg" alt="Single Prompt frontend development" class="talk-image">
+          <div class="talk-content">
+            <div class="talk-date">Feb 2026</div>
+            <h3 class="talk-title">Single Prompt frontend development</h3>
+            <div class="talk-event">Javascript Gujarat, Rajkot</div>
+            <p class="talk-desc">Exploring the future of frontend development with AI prompts and how it changes the developer workflow.</p>
+            <div class="gallery">
+              <img src="img/js-gujarat/audience.jpeg" alt="Audience at JS Gujarat">
+              <img src="img/js-gujarat/demo.jpeg" alt="Live Demo">
+              <img src="img/js-gujarat/munir-walk.jpeg" alt="Munir Speaking">
+            </div>
+          </div>
+        </article>
+        <article class="talk-card">
+          <div class="talk-content">
+            <div class="talk-date">Dec 2025</div>
+            <h3 class="talk-title">Code Quality with Gemini</h3>
+            <div class="talk-event">GDG Cloud Rajkot</div>
+            <p class="talk-desc">Leveraging Google's Gemini AI for improving code quality, automated reviews, and developer productivity.</p>
+          </div>
+        </article>
+        <article class="talk-card">
+          <div class="talk-content">
+            <div class="talk-date">Feb 2025</div>
+            <h3 class="talk-title">Designing Cloud-Native Architectures</h3>
+            <div class="talk-event">Marwadi University</div>
+            <p class="talk-desc">A deep dive into designing scalable, resilient, and maintainable cloud-native systems for modern applications.</p>
+          </div>
+        </article>
+        <article class="talk-card">
+          <div class="talk-content">
+            <div class="talk-date">Jul 2024</div>
+            <h3 class="talk-title">Mastering Containers: Podman vs Docker</h3>
+            <div class="talk-event">VVP Engineering College</div>
+            <p class="talk-desc">A comparative analysis of Podman and Docker, exploring security, architecture, and use cases.</p>
+          </div>
+        </article>
+        <article class="talk-card">
+          <div class="talk-content">
+            <div class="talk-date">May 2024</div>
+            <h3 class="talk-title">Building Resilient Event-Driven Systems</h3>
+            <div class="talk-event">GDG Cloud Rajkot</div>
+            <p class="talk-desc">Architecting systems that can withstand failures using event-driven patterns and distributed messaging.</p>
+          </div>
+        </article>
+        <article class="talk-card">
+          <div class="talk-content">
+            <div class="talk-date">Oct 2023</div>
+            <h3 class="talk-title">Laravel Sail From Zero to Hero</h3>
+            <div class="talk-event">Laravel Rajkot Meetup</div>
+            <p class="talk-desc">Getting started with Laravel Sail for effortless local development environments using Docker.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
   </main>
+
   <footer>
-    <p style="text-align:center; padding:1rem 0; font-size:0.9rem; color:#666;">© <span id="current-year"></span> Munir Khakhi</p>
+    <div class="container">
+      <p style="text-align:center; padding:2rem 0; color:var(--text-muted);">© <span id="year"></span> Munir Khakhi. All rights reserved.</p>
+    </div>
   </footer>
-  <script src="js/theme-toggle.min.js"></script>
+
+  <script>const themeToggle = document.getElementById('theme-toggle');const html = document.documentElement;const icon = themeToggle;const savedTheme = localStorage.getItem('theme') || 'light';html.setAttribute('data-theme', savedTheme);icon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';themeToggle.addEventListener('click', () => {const currentTheme = html.getAttribute('data-theme');const newTheme = currentTheme === 'light' ? 'dark' : 'light';html.setAttribute('data-theme', newTheme);localStorage.setItem('theme', newTheme);icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';});document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</div>
+    <img class="lightbox-content" id="lightbox-img" alt="Enlarged photo">
+    <div class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</div>
+  </div>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const prevBtn = document.getElementById('lightbox-prev');
+        const nextBtn = document.getElementById('lightbox-next');
+        
+        let currentImageIndex = 0;
+        const imagesList = [];
+
+
+        const allImages = document.querySelectorAll('.gallery img, .talk-image');
+        
+        allImages.forEach((img, index) => {
+
+            if (img.src) {
+                imagesList.push(img.src);
+                img.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openLightbox(index);
+                });
+            }
+        });
+
+        function openLightbox(index) {
+            if (imagesList.length === 0) return;
+            currentImageIndex = index;
+            updateLightboxImage();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function updateLightboxImage() {
+            lightboxImg.src = imagesList[currentImageIndex];
+        }
+
+        function showNext() {
+            currentImageIndex = (currentImageIndex + 1) % imagesList.length;
+            updateLightboxImage();
+        }
+
+        function showPrev() {
+            currentImageIndex = (currentImageIndex - 1 + imagesList.length) % imagesList.length;
+            updateLightboxImage();
+        }
+
+        if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+        
+        if (nextBtn) nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showNext();
+        });
+        
+        if (prevBtn) prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showPrev();
+        });
+
+
+        if (lightbox) lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                closeLightbox();
+            }
+        });
+
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        });
+    });
+  </script>
 </body>
 </html>
